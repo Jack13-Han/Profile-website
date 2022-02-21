@@ -1,0 +1,848 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
+:root{
+    --main-color:#08d665;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Rubik', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth !important;
+}
+
+body{
+    background-color: #2b2c2c;
+    height: 500vh;
+    overflow-x: hidden;
+    transition: background 0.2s linear;
+
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 10px;
+   
+  }
+  
+
+
+  body::-webkit-scrollbar-track {
+    background: #252525;
+  }
+
+  body::-webkit-scrollbar {
+    width: 10px;
+  }
+
+
+
+
+ul{
+    list-style: none;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: var(--main-color);
+}
+
+
+button:focus-visible{
+    outline: none;
+}
+
+button:focus{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon{
+    color: var(--main-color) !important;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none
+
+}
+
+.nav-bar{
+    position: absolute;
+    top: 0px;
+    transition:  1s !important;    
+    z-index: 100;
+
+    background-color: #2c2c2c;
+}
+
+
+.scroll-nav{
+    position: fixed;
+    top: 0px ;
+    z-index: 100;
+    background-color: #2c2c2c;
+    transition: 1s !important;
+    
+    
+}
+
+.navbar-nav{
+    width: 500px;
+}
+
+.navbar-toggler2{
+    background: transparent;
+}
+.menu-icon-1{
+    color: var(--main-color);
+}
+
+.menu-icon-2{
+    color: var(--main-color);
+    font-size: 53px;
+}
+/********************************Start Light Mode*************************************************/
+.label{
+    height: 26px;
+    width: 50px;
+    display: flex;
+    background-color: #111;
+    border-radius: 50px;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    transform: scale(1.2);
+
+}
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.feather-sun{
+    color: var(--main-color);
+}
+
+.feather-moon{
+    color: var(--main-color);
+}
+
+.ball{
+    width: 22px;
+    height: 22px;
+    background-color: #fff;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.3s linear;
+    cursor: pointer;
+}
+
+.checkbox:checked + .label .ball{
+    /* background-color: purple; */
+    transform: translateX(24px);
+}
+
+/**************************************************End Light Mode*************************************************/
+
+
+
+
+.color-switcher{
+    position: fixed;
+    top: 250px; right: -302px;
+    width: 300px;
+    padding: 10px;
+    background: transparent;
+    z-index: 1000;
+    transition: 0.5s;
+    backdrop-filter: blur(3px);
+    
+}
+
+.color-switcher.active{
+    right: 0;
+    transition: 0.5s;
+    background: transparent;
+    z-index: 1000;
+    transition: 0.5s;
+}
+
+.color-switcher .color{
+    color: var(--main-color);
+     font-size: 20px;
+
+     margin-bottom: 10px;
+     border-bottom: 1px solid #333;
+     padding: 5px 0;
+     text-align: center;
+}
+
+.color-switcher .color-switcher-btn{
+    position: absolute;
+    top: 0px; left: -75px;
+    color: var(--main-color);
+    background: transparent;
+    padding: 10px 20px ;
+    cursor: pointer;
+    font-size: 33px;
+    
+}
+
+.color-switcher .color-switcher-btn i{
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.color-switcher .theme-buttons-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.color-switcher .theme-buttons-container .theme-buttons{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+
+#home{
+    overflow: hidden;
+}
+
+#about{
+    overflow: hidden;
+}
+
+#services{
+    overflow: hidden;
+}
+
+#portfolio{
+    overflow: hidden;
+}
+
+#blog{
+    overflow: hidden;
+}
+
+#contact{
+    overflow: hidden;
+}
+
+
+
+
+.home-text{
+    margin-top: 100px;
+    color: var(--main-color);
+}
+.type{
+    color: var(--main-color);
+}
+
+
+
+
+.btn-color{
+    color: var(--main-color);
+  border-color: var(--main-color);
+}
+
+.btn-color:hover{
+    color: #fff;
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+}
+
+.me-logo{
+    margin-top: 50px;
+}
+
+
+.nav-link.current-section{
+    border-bottom: 1px solid var(--main-color);
+    color: var(--main-color) !important;
+    
+}
+
+.logo-text{
+    font-size: 50px;
+    color: var(--main-color) !important;
+}
+
+
+
+.top{
+    background-color: var(--main-color);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    position: fixed;
+    right: 10px;
+    border-radius: 50px;
+    display: none;
+    bottom: 15px;
+
+}
+
+.top-show{
+    display: block;
+    z-index: 100;
+}
+
+.top a{
+    color: white !important;
+    
+    
+}
+
+.top a i{
+    color: white !important;
+}
+
+
+
+.about-img{
+    background-image: url(../img/about_shap_bg.png);
+    background-size: contain;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.about-card{
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s;
+    position: relative;
+    width: 500px;
+    height: 350px;
+    /* background-color: #ccc; */
+}
+
+.about-card .circle{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.about-card .circle::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #746d6d;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+
+
+.about-card:hover .circle::before{
+    clip-path: circle(400px at center);
+    background-color: var(--main-color);
+}
+
+.about-card img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 300px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+
+.about-card:hover img{
+    height: 350px;
+    left: 74%;
+}
+
+
+.about-card .content{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px ;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.about-card:hover .content{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.about-card .content h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 5px;
+}
+
+.about-card .content p{
+    color: #fff;
+
+}
+
+
+.about-title{
+    color: var(--main-color);
+}
+
+
+
+
+
+.about-text-1{
+    font-size: 75px;
+    font-weight: bolder;
+}
+
+
+
+
+.services{
+    background-color: #262727;
+}
+
+.services-title-1{
+    color: var(--main-color);
+}
+
+.service-card{
+    background-color: transparent !important;
+    border: 1px solid #fff;
+    transition: 0.9s;
+}
+
+.service-card:hover{
+    cursor: pointer;
+    transform: translate(0px,-30px);
+}
+.service-card:hover .services-title{
+    color: var(--main-color) !important;
+}
+
+.services-title{
+    font-weight: bolder;
+}
+
+.icon-bg{
+    background-image: url(../img/service-icon-bg.svg);
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.icon-img{
+    max-width: 100%;
+    height: auto;
+}
+
+.portfolio-title-1{
+    color: var(--main-color);
+}
+
+
+.divide{
+    width: 130px;
+    height: 5px;
+    background-color: var(--main-color);
+    margin: auto;
+}
+
+.filter{ 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.filter li{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.filter li.active{
+    border-bottom: 1px solid var(--main-color);
+}
+
+
+
+.blog-title-1{
+color: var(--main-color);
+}
+
+
+
+
+
+.blog-card{
+    background-color: #333333;
+    border: 1px solid #fff;
+    transition: 1s;
+}
+
+.blog-card:hover {
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+.blog-card:hover .card-title{
+    color: #2b2c2c !important;
+}
+
+.blog-card:hover .card-text{
+    color: #2b2c2c !important;
+}
+
+.contact-title-1{
+    color: var(--main-color) !important;
+}
+
+
+.form-control{
+    color: #777777;
+    background-color: #363737;
+    border: none;
+}
+.form-control:focus{
+    outline: none;
+    box-shadow: none;
+    background-color:#363737 ;
+    border: none;
+    color: white;
+}
+
+.contact-input{
+    padding: 15px 20px;
+    color: white;
+}
+.contact-input::placeholder {
+    color: #777777;
+  }
+  
+  textarea:focus-visible{
+      outline: none;
+      color: white;
+  }
+
+    textarea::placeholder{
+        color: #777777 !important;
+    }
+
+  .contact-area{
+      background-color: #363737;
+      padding: 20px 20px;
+  }
+
+  .btn-message{
+      border-radius: 0px !important;
+      
+  }
+
+  .contact-ul{
+      padding: 0px;
+  }
+
+  .contact-li{
+      margin-bottom: 40px;
+      color: #727b86;
+  }
+  .contact-icon{
+      padding: 0px;
+      margin: 0px;
+  }
+
+  .contact-icon i{
+  
+    padding: 10px 20px;
+    transition: 0.5s;
+    color: var(--main-color) !important;
+}
+
+.contact-icon i:hover{
+    transform: scale(2);
+}
+
+.ani-delay-1{
+    animation-delay: 0.5s;
+
+}
+
+.ani-delay-2{
+    animation-delay: 1s;
+
+
+}
+
+.ani-delay-3{
+    animation-delay: 1.5s;
+
+
+}
+
+
+.ani-delay-4{
+    animation-delay: 2s;
+
+
+}
+.ani-delay-5{
+    animation-delay: 2.5s;
+
+}
+
+
+#particles-js{
+    position: relative;
+}
+
+.skill{
+    position: absolute;
+    
+}
+
+.moon{
+    cursor: pointer;
+}
+
+.fa-sun{
+    color: #000 !important;
+}
+
+.footer-title{
+    color: var(--main-color);
+}
+
+
+
+@media screen and (max-width:1030px) {
+    body{
+        overflow-x: hidden;
+    }
+
+
+    .about-card{
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+    }
+
+    .about-card:hover{
+        height: 600px;
+    }
+
+    .about-card .content{
+        width: 100%;
+        left: 0;
+        padding: 30px ;
+    }
+
+    .about-card:hover img{
+        top: 70%;
+        left: 50%;
+        height: 300px;
+    }
+
+
+
+
+
+
+
+
+    .fontWidth{
+        font-size: 33px;
+    }
+    .about-text-1{
+        font-size: 69px;
+        
+    }
+
+    #particles-js{
+        height: 600px;
+    }
+}
+
+@media screen and (max-width:770px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .fontWidth{
+        font-size: 25px;
+    }
+
+    
+    
+
+    .circle-chart{
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+    #particles-js{
+        height: 530px;
+    }
+
+    .about-text-1{
+        font-size: 69px;
+       
+    }
+    
+
+    
+}
+
+
+
+@media screen and (max-width:570px) {
+    .home-text{
+        margin-top: 50px;
+    }
+
+
+    .circle-chart{
+        width: 110px !important;
+        height: 110px !important;
+    }
+
+
+
+    .about-text-1{
+        font-size: 56px;
+    }
+
+    .about-text-2{
+        margin-top: 85px;
+    }
+
+
+    .fontWidth{
+            font-size: 23px;
+    }
+
+
+    .filter {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact-form{
+        margin-top: 70px;
+    }
+
+
+    .color-switcher{
+        position: fixed;
+        top: 250px; right: -225px;
+        width: 215px;
+        padding: 10px;
+        background: transparent;
+        z-index: 1000;
+        transition: 0.5s;
+        
+        
+    }
+    
+    .color-switcher.active{
+        right: 0;
+        transition: 0.5s;
+        background: transparent;
+        z-index: 1000;
+        transition: 0.5s;
+    }
+    
+    .color-switcher .color{
+        color: var(--main-color);
+         font-size: 20px;
+    
+         margin-bottom: 10px;
+         border-bottom: 1px solid #333;
+         padding: 5px 0;
+         text-align: center;
+    }
+    
+    .color-switcher .color-switcher-btn{
+        position: absolute;
+        top: 0px; left: -75px;
+        color: var(--main-color);
+        background: transparent;
+        padding: 10px 20px ;
+        cursor: pointer;
+        font-size: 33px;
+       
+    }
+    
+    .color-switcher .color-switcher-btn i{
+        animation: rotate 2s linear infinite;
+    }
+    
+    @keyframes rotate {
+        100%
+        {
+            transform: rotate(360deg);
+        }
+    }
+    
+    .color-switcher .theme-buttons-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .color-switcher .theme-buttons-container .theme-buttons{
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin: 5px;
+        cursor: pointer;
+    }
+    
+
+
+
+
+}
+
+@media screen and (max-width:380px) {
+    .filter li{
+        margin-left: 17px;
+    }
+}

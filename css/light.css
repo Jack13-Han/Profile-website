@@ -1,0 +1,201 @@
+:root{
+    --light-secondary : #f8eeee;
+    --light : #f9f9f9;
+    --light-secondary-soft : #e6ecf3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+body.light_mode{
+    background-color: var(--light);
+}
+
+
+
+
+.light_mode .nav-bar{
+    /* background-color: #f0f0f0; */
+    background-color: #f9f9f9;
+}
+
+.light_mode .scroll-nav{
+    position: fixed;
+    top: 0px ;
+    z-index: 100;
+    background-color: #f0f0f0;
+    transition: 0.5s;
+    
+    
+}
+
+.light_mode .nav-link {
+    color: #000 !important;
+    /* background-color: #000; */
+}
+
+.light_mode .label{
+    background-color: var(--light-secondary);
+    
+
+}
+
+.light_mode .ball{
+    background-color: #000;
+}
+
+
+.light_mode .fontWidth{
+    color: #000 !important;
+}
+
+.light_mode .home-text p{
+    color: #000 !important;
+}
+
+.light_mode #about{
+    background-color: var(--light-secondary) !important;
+}
+
+.light_mode #about .about-text-1{
+    color: #000 !important;
+}
+
+.light_mode #about .content h2,p{
+    color: #000 !important;
+}
+
+.light_mode #about .about-text-2 h1{
+    color: #000 !important;
+}
+
+.light_mode #about .about-text-2 p{
+    color: #000 !important;
+
+}
+
+.light_mode #about .about-text-2 div{
+    
+    color: #000 !important;
+}
+
+
+
+.light_mode .services{
+    background-color: var(--light);
+}
+
+.light_mode .services .services-title{
+    color: #000 !important;
+}
+
+.light_mode .services .services-p{
+    color: #000 !important;
+}
+
+.light_mode .service-card{
+    background-color: transparent !important;
+    border: 1px solid #000;
+    transition: 0.9s;
+}
+
+
+.light_mode .portfolio{
+    background-color:#fbfbfb !important;
+}
+
+.light_mode .portfolio-title{
+    color: #000 !important;
+}
+
+.light_mode .portfolio-p{
+    color: #000 !important;
+}
+
+
+.light_mode [class^='imghvr-'], [class*=' imghvr-'] {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    max-width: 100%;
+    background-color: #f9f9f9ff;
+    color: #fff;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+}
+
+
+
+.light_mode .blog{
+
+    background-color: #fbfbfb;
+}
+
+.light_mode .blog-title{
+    color: #000 !important;
+}
+
+.light_mode .blog-card{
+    background-color: #fff;
+    border: 1px solid #000;
+    transition: 1s;
+}
+
+
+.light_mode .blog-text{
+    color: #000 !important;
+   
+} 
+
+.light_mode .blog-text-1{
+    color: #8a8fa3 !important;
+}
+
+.light_mode .contact-title{
+    color: #000 !important;
+}
+
+.light_mode .contact-title-2{
+    color: #8a8fa3 !important;
+
+}
+
+.light_mode .contact-input{
+    padding: 15px 20px;
+    background-color: #fff !important;
+    color: #8a8fa3 !important;
+    
+}
+
+.light_mode .contact-area{
+    background-color: #fff !important;
+    padding: 20px 20px;
+    
+    
+}
+
+.light_mode  textarea:focus-visible{
+    outline: none;
+    color: #8a8fa3;
+}
+
+.light_mode .footer{
+    background-color: #fbfbfb !important;
+}
+
+.light_mode .footer-text-1{
+    color: #8a8fa3 !important;
+}
+
