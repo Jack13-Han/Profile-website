@@ -1,17 +1,32 @@
-var typed = new Typed('.type', {
-    strings: [
-        'Web Developer',
-        'Web Designer',
-        'Han Wai Htun',
-        'Photographer',
-        'Front-end Developer'
-    ],
-    typeSpeed:80,
-    backSpeed:80,
-    loop:true,
-    });
+// var typed5 = new Typed('#language', {
+//     strings: [
+//         'ウェブ開発者', 
+//         'ウェブデザイナー',
+//          'ハン ワィ トゥン'],
+//     typeSpeed: 60,
+//     backSpeed: 60,
+//     cursorChar: '_',
+//     shuffle: true,
+//     smartBackspace: false,
+//     loop: true
+//   });
 
+// Index Type Js
 
+// var typed = new Typed('.type', {
+//     strings: [
+//         'Web Developer',
+//         'Web Designer',
+//         'Han Wai Htun',
+//         'Photographer',
+//         'Front-end Developer'
+//     ],
+//     typeSpeed:80,
+//     backSpeed:80,
+//     loop:true,
+//     });
+
+// index type
     var type = new Typed('.learn', {
         strings: [
             'HTML',
@@ -19,7 +34,7 @@ var typed = new Typed('.type', {
             'JavaScript',
             'jQuery',
             'Bootstrap',
-            'Photoshot',
+            'Photo',
             'Adobe Xd',
             'Adobe AI'
         ],
@@ -28,11 +43,7 @@ var typed = new Typed('.type', {
         loop:true,
         });
     
-    
-       
-
-            
-
+    // Language Type
 
             wow = new WOW(
                 {
@@ -44,9 +55,6 @@ var typed = new Typed('.type', {
               }
               )
               wow.init();
-
-
-   
 
 
 
@@ -170,8 +178,6 @@ var typed = new Typed('.type', {
                 let lightModeToggle= document.getElementById("checkbox");
                 lightModeToggle.addEventListener("change",function () {
                     $("body").toggleClass("light_mode")
-                    
-
                 })
 
                 //change color
@@ -191,7 +197,6 @@ var typed = new Typed('.type', {
 
                 //change phone size nav-bar button
 
-                
                 $(".navbar-toggler").click(function(){
                     let x = $(".navbar-toggler2").html(` <i class="fas fa-times fa-2x menu-icon-2"></i>`)
                      $(this).addClass("d-none");
@@ -214,7 +219,35 @@ var typed = new Typed('.type', {
                    })
 
 
+                //    Change Language English To Japan
+                const languageToggle = document.getElementById('languageToggle');
+                languageToggle.addEventListener('change', function() {
+                const selectedLanguage = this.checked ? 'jp' : 'en';
+                let newPageURL = '';
 
+
+                if (selectedLanguage == "jp") {
+                    newPageURL = "jp.html"
+                }else if(selectedLanguage == "en"){
+                    newPageURL = 'index.html';
+                }
+
+                if (newPageURL) {
+                    window.location.href = newPageURL;
+                }
+                
+                localStorage.setItem('selectedLanguage', selectedLanguage);
+                });
+
+                document.addEventListener('DOMContentLoaded', function() {
+                const storedLanguage = localStorage.getItem('selectedLanguage');
+                if (storedLanguage === 'jp') {
+                    languageToggle.checked = true;
+                } else if(storedLanguage === 'en'){
+                    languageToggle.checked = false;
+                }
+
+                });
 
 
                 // if(lightMode === null ){

@@ -4,22 +4,9 @@
     --light-secondary-soft : #e6ecf3;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 body.light_mode{
     background-color: var(--light);
 }
-
-
 
 
 .light_mode .nav-bar{
