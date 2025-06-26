@@ -226,9 +226,9 @@
                 let newPageURL = '';
 
 
-                if (selectedLanguage == "jp") {
+                if (selectedLanguage === "jp") {
                     newPageURL = "jp.html"
-                }else if(selectedLanguage == "en"){
+                }else if(selectedLanguage === "en"){
                     newPageURL = 'index.html';
                 }
 
