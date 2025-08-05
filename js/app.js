@@ -9,22 +9,22 @@
 //     shuffle: true,
 //     smartBackspace: false,
 //     loop: true
-//   });
+// //   });
 
 // Index Type Js
 
-// var typed = new Typed('.type', {
-//     strings: [
-//         'Web Developer',
-//         'Web Designer',
-//         'Han Wai Htun',
-//         'Photographer',
-//         'Front-end Developer'
-//     ],
-//     typeSpeed:80,
-//     backSpeed:80,
-//     loop:true,
-//     });
+var typed = new Typed('.type', {
+    strings: [
+        'Web Developer',
+        'Web Designer',
+        'Han Wai Htun',
+        'Photographer',
+        'Front-end Developer'
+    ],
+    typeSpeed:80,
+    backSpeed:80,
+    loop:true,
+    });
 
 // index type
     var type = new Typed('.learn', {
