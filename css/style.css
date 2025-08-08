@@ -134,9 +134,11 @@ button:focus{
     color: var(--main-color);
 }
 
-.feather-moon{
+.feather-moon,.fa-e,.fa-j{
     color: var(--main-color);
 }
+
+
 
 .ball{
     width: 22px;

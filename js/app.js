@@ -26,6 +26,23 @@ var typed = new Typed('.type', {
     loop:true,
     });
 
+    //ECC Type
+
+    var type = new Typed('.ecc',{
+        strings:[
+            'Java SE',
+            'React Js',
+            'PHP',
+            'Laravel 10',
+            
+        ],
+        typeSpeed:70,
+        backSpeed:70,
+        loop:true,
+        smartBackspace: true,
+
+    })
+
 // index type
     var type = new Typed('.learn', {
         strings: [
