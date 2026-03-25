@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
 
 :root{
-    --main-color:#08d665;
+    --main-color:#22d3ee;
+    --bg:#0f172a;
+    --surface:#111827;
+    --surface-2:#1f2937;
+    --surface-3:#0b1220;
+    --border-strong:#334155;
 }
 
 *{
@@ -16,8 +21,8 @@ html{
 }
 
 body{
-    background-color: #2b2c2c;
-    height: 500vh;
+    background-color: var(--bg);
+    min-height: 100vh;
     overflow-x: hidden;
     transition: background 0.2s linear;
 
@@ -31,9 +36,9 @@ body::-webkit-scrollbar-thumb {
   
 
 
-  body::-webkit-scrollbar-track {
-    background: #252525;
-  }
+    body::-webkit-scrollbar-track {
+        background: var(--surface-2);
+    }
 
   body::-webkit-scrollbar {
     width: 10px;
@@ -82,7 +87,16 @@ button:focus{
     transition:  1s !important;    
     z-index: 100;
 
-    background-color: #2c2c2c;
+    background-color: var(--surface);
+}
+
+.nav-bar .navbar{
+    padding: 12px 0;
+}
+
+.nav-bar .nav-item{
+    display: flex;
+    align-items: center;
 }
 
 
@@ -90,14 +104,14 @@ button:focus{
     position: fixed;
     top: 0px ;
     z-index: 100;
-    background-color: #2c2c2c;
+    background-color: var(--surface);
     transition: 1s !important;
     
     
 }
 
 .navbar-nav{
-    width: 500px;
+    width: auto;
 }
 
 .navbar-toggler2{
@@ -116,7 +130,7 @@ button:focus{
     height: 26px;
     width: 50px;
     display: flex;
-    background-color: #111;
+    background-color: var(--surface-3);
     border-radius: 50px;
     justify-content: space-between;
     padding: 5px;
@@ -143,7 +157,7 @@ button:focus{
 .ball{
     width: 22px;
     height: 22px;
-    background-color: #fff;
+    background-color: #e5e7eb;
     position: absolute;
     top: 2px;
     left: 2px;
@@ -441,7 +455,7 @@ button:focus{
 
 
 .services{
-    background-color: #262727;
+    background-color: var(--surface-2);
 }
 
 .services-title-1{
@@ -450,7 +464,7 @@ button:focus{
 
 .service-card{
     background-color: transparent !important;
-    border: 1px solid #fff;
+    border: 1px solid var(--border-strong);
     transition: 0.9s;
 }
 
@@ -493,6 +507,10 @@ button:focus{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    list-style: none;
+    padding-left: 0;
 }
 
 .filter li{
@@ -502,6 +520,78 @@ button:focus{
 
 .filter li.active{
     border-bottom: 1px solid var(--main-color);
+}
+
+.project-card{
+    background-color: var(--surface-2);
+    border: 1px solid var(--border-strong);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.project-card:hover{
+    transform: translateY(-6px);
+    border-color: var(--main-color);
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.35);
+}
+
+.project-media{
+    display: block;
+}
+
+.project-thumb{
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.project-body{
+    padding: 20px;
+}
+
+.project-title{
+    color: #f8fafc;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.project-desc{
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.project-tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.tag{
+    background-color: var(--surface-3);
+    border: 1px solid var(--border-strong);
+    border-radius: 999px;
+    color: #e2e8f0;
+    font-size: 12px;
+    padding: 4px 10px;
+}
+
+.project-links{
+    display: flex;
+    gap: 12px;
+}
+
+.project-link{
+    color: var(--main-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.project-link:hover{
+    text-decoration: underline;
 }
 
 
@@ -515,8 +605,8 @@ color: var(--main-color);
 
 
 .blog-card{
-    background-color: #333333;
-    border: 1px solid #fff;
+    background-color: var(--surface-2);
+    border: 1px solid var(--border-strong);
     transition: 1s;
 }
 
@@ -526,11 +616,11 @@ color: var(--main-color);
 }
 
 .blog-card:hover .card-title{
-    color: #2b2c2c !important;
+    color: var(--bg) !important;
 }
 
 .blog-card:hover .card-text{
-    color: #2b2c2c !important;
+    color: var(--bg) !important;
 }
 
 .contact-title-1{
@@ -539,14 +629,14 @@ color: var(--main-color);
 
 
 .form-control{
-    color: #777777;
-    background-color: #363737;
+    color: #94a3b8;
+    background-color: var(--surface-2);
     border: none;
 }
 .form-control:focus{
     outline: none;
     box-shadow: none;
-    background-color:#363737 ;
+    background-color: var(--surface-2);
     border: none;
     color: white;
 }
@@ -556,8 +646,8 @@ color: var(--main-color);
     color: white;
 }
 .contact-input::placeholder {
-    color: #777777;
-  }
+        color: #94a3b8;
+    }
   
   textarea:focus-visible{
       outline: none;
@@ -565,11 +655,11 @@ color: var(--main-color);
   }
 
     textarea::placeholder{
-        color: #777777 !important;
+        color: #94a3b8 !important;
     }
 
   .contact-area{
-      background-color: #363737;
+      background-color: var(--surface-2);
       padding: 20px 20px;
   }
 
@@ -645,7 +735,7 @@ color: var(--main-color);
 }
 
 .fa-sun{
-    color: #000 !important;
+    color: var(--bg) !important;
 }
 
 .footer-title{

@@ -1,7 +1,7 @@
 :root{
-    --light-secondary : #f8eeee;
-    --light : #f9f9f9;
-    --light-secondary-soft : #e6ecf3;
+    --light-secondary : #eef2f7;
+    --light : #f8fafc;
+    --light-secondary-soft : #e2e8f0;
 }
 
 body.light_mode{
@@ -10,15 +10,14 @@ body.light_mode{
 
 
 .light_mode .nav-bar{
-    /* background-color: #f0f0f0; */
-    background-color: #f9f9f9;
+    background-color: var(--light);
 }
 
 .light_mode .scroll-nav{
     position: fixed;
     top: 0px ;
     z-index: 100;
-    background-color: #f0f0f0;
+    background-color: var(--light-secondary);
     transition: 0.5s;
     
     
@@ -56,7 +55,8 @@ body.light_mode{
     color: #000 !important;
 }
 
-.light_mode #about .content h2,p{
+.light_mode #about .content h2,
+.light_mode #about .content p{
     color: #000 !important;
 }
 
@@ -107,8 +107,32 @@ body.light_mode{
     color: #000 !important;
 }
 
+.light_mode .project-card{
+    background-color: #fff;
+    border: 1px solid #e2e8f0;
+}
 
-.light_mode [class^='imghvr-'], [class*=' imghvr-'] {
+.light_mode .project-card:hover{
+    box-shadow: 0 18px 30px rgba(15, 23, 42, 0.12);
+}
+
+.light_mode .project-title{
+    color: #0f172a;
+}
+
+.light_mode .project-desc{
+    color: #64748b;
+}
+
+.light_mode .tag{
+    background-color: #f1f5f9;
+    border-color: #e2e8f0;
+    color: #0f172a;
+}
+
+
+.light_mode [class^='imghvr-'],
+.light_mode [class*=' imghvr-'] {
     position: relative;
     display: inline-block;
     margin: 0;
