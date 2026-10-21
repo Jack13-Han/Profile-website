@@ -29,16 +29,21 @@ function initTyped() {
   }
 
   if (document.querySelector(".type")) {
+    const isJapanese = getCurrentLanguage() === "jp";
     typedInstance = new Typed(".type", {
-      strings: [
-        "Web Developer",
-        "Web Designer",
-        "Han Wai Htun",
-        "Photographer",
-        "Front-end Developer",
-      ],
+      strings: isJapanese
+        ? ["ウェブ開発者", "ウェブデザイナー", "ハン ワィ トゥン"]
+        : [
+            "Web Developer",
+            "Web Designer",
+            "Han Wai Htun",
+            "Photographer",
+            "Front-end Developer",
+          ],
       typeSpeed: 80,
       backSpeed: 80,
+      backDelay: 250,
+      smartBackspace: true,
       loop: true,
     });
   }
@@ -48,6 +53,7 @@ function initTyped() {
       strings: ["Java SE", "React Js", "PHP", "Laravel 10"],
       typeSpeed: 70,
       backSpeed: 70,
+      backDelay: 250,
       loop: true,
       smartBackspace: true,
     });
@@ -67,6 +73,7 @@ function initTyped() {
       ],
       typeSpeed: 90,
       backSpeed: 90,
+      backDelay: 250,
       loop: true,
     });
   }
@@ -294,40 +301,14 @@ function getCurrentLanguage() {
   return pageContent?.getAttribute("data-lang") || "en";
 }
 
-async function swapLanguage(targetLanguage) {
+function swapLanguage(targetLanguage) {
   const currentLanguage = getCurrentLanguage();
   if (targetLanguage === currentLanguage) {
     return;
   }
 
   const targetUrl = targetLanguage === "jp" ? "jp.html" : "index.html";
-  const response = await fetch(targetUrl, { cache: "no-store" });
-  if (!response.ok) {
-    return;
-  }
-
-  const htmlText = await response.text();
-  const parser = new DOMParser();
-  const nextDoc = parser.parseFromString(htmlText, "text/html");
-  const nextContent = nextDoc.getElementById("page-content");
-  const pageContent = document.getElementById("page-content");
-
-  if (!nextContent || !pageContent) {
-    return;
-  }
-
-  pageContent.innerHTML = nextContent.innerHTML;
-  pageContent.setAttribute("data-lang", targetLanguage);
-  document.title = nextDoc.title || document.title;
-  history.replaceState(null, "", targetUrl);
-
-  if (typeof $.waypoints === "function") {
-    $.waypoints("destroy");
-  }
-  navWaypointsBound = false;
-
-  setNavExpanded(false);
-  initPageScripts();
+  window.location.href = `${targetUrl}${window.location.hash}`;
 }
 
 function bindLanguageToggle() {
@@ -339,7 +320,6 @@ function bindLanguageToggle() {
   languageToggle.checked = getCurrentLanguage() === "jp";
   languageToggle.onchange = function () {
     const selectedLanguage = this.checked ? "jp" : "en";
-    localStorage.setItem("selectedLanguage", selectedLanguage);
     swapLanguage(selectedLanguage);
   };
 }
@@ -356,12 +336,7 @@ function initPageScripts() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  const storedLanguage = localStorage.getItem("selectedLanguage");
-  if (storedLanguage && storedLanguage !== getCurrentLanguage()) {
-    swapLanguage(storedLanguage);
-  } else {
-    initPageScripts();
-  }
+  initPageScripts();
 });
 
 // if(lightMode === null ){

@@ -528,6 +528,9 @@ button:focus{
     border-radius: 16px;
     overflow: hidden;
     transition: 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card:hover{
@@ -548,6 +551,9 @@ button:focus{
 
 .project-body{
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .project-title{
@@ -582,6 +588,7 @@ button:focus{
 .project-links{
     display: flex;
     gap: 12px;
+    margin-top: auto;
 }
 
 .project-link{
@@ -939,3 +946,26 @@ color: var(--main-color);
         margin-left: 17px;
     }
 }
+.portfolio-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+    gap: 24px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.portfolio-grid > .portfolio-intro{
+    grid-column: 1 / -1;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.portfolio-grid > .portfolio-stack{
+    display: contents;
+}
+
+.portfolio-grid .itemBox{
+    min-width: 0;
+    height: 100%;
+}
+
