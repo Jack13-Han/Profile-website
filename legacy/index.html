@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <div class="loader-container">
+        <div class="loader"></div>
+      </div> -->
+
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Han Wai Htun | Web Developer Portfolio</title>
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Han Wai Htun | Web Developer Portfolio">
+    <meta name="description"
+        content="Portfolio of Han Wai Htun, web developer and designer. Explore services, featured projects, and contact information.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="index.html">
+    <link rel="icon" href="img/logo.svg">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="index.html">
+    <meta property="og:title" content="Han Wai Htun | Web Developer Portfolio">
+    <meta property="og:description"
+        content="Portfolio of Han Wai Htun, web developer and designer. Explore services, featured projects, and contact information.">
+    <meta property="og:image" content="img/logo.svg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="index.html">
+    <meta property="twitter:title" content="Han Wai Htun | Web Developer Portfolio">
+    <meta property="twitter:description"
+        content="Portfolio of Han Wai Htun, web developer and designer. Explore services, featured projects, and contact information.">
+    <meta property="twitter:image" content="img/logo.svg">
+
+
+
+
+
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="vendor/feather-icons-web/feather.css">
+    <link rel="stylesheet" href="vendor/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="vendor/venobox/venobox.css">
+    <link rel="stylesheet" href="vendor/animate_it/animate.css">
+    <link rel="stylesheet" href="vendor/image_hover/imagehover.css">
+    <link rel="stylesheet" href="css/light.css">
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <style>
+        .loader-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            background-color: white;
+            width: 100%;
+            position: fixed;
+            z-index: 2000;
+            top: 0;
+        }
+
+
+
+        .loader,
+        .loader:before,
+        .loader:after {
+            background: var(--main-color);
+            -webkit-animation: load1 1s infinite ease-in-out;
+            animation: load1 1s infinite ease-in-out;
+            width: 1em;
+            height: 4em;
+        }
+
+        .loader {
+            color: #ffffff;
+            text-indent: -9999em;
+            margin: 88px auto;
+            position: relative;
+            font-size: 11px;
+            -webkit-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-animation-delay: -0.16s;
+            animation-delay: -0.16s;
+        }
+
+        .loader:before,
+        .loader:after {
+            position: absolute;
+            top: 0;
+            content: '';
+        }
+
+        .loader:before {
+            left: -1.5em;
+            -webkit-animation-delay: -0.32s;
+            animation-delay: -0.32s;
+        }
+
+        .loader:after {
+            left: 1.5em;
+        }
+
+        @-webkit-keyframes load1 {
+
+            0%,
+            80%,
+            100% {
+                box-shadow: 0 0;
+                height: 4em;
+            }
+
+            40% {
+                box-shadow: 0 -2em;
+                height: 5em;
+            }
+        }
+
+        @keyframes load1 {
+
+            0%,
+            80%,
+            100% {
+                box-shadow: 0 0;
+                height: 4em;
+            }
+
+            40% {
+                box-shadow: 0 -2em;
+                height: 5em;
+            }
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <div id="page-content" data-lang="en">
+        <header class="container-fluid nav-bar  wow  animate__bounceInDown">
+            <div class="row">
+                <div class="col-12">
+                    <div class="container">
+                        <div class="row align-items-center ">
+                            <div class="col-12 px-0">
+
+                                <nav class="navbar navbar-expand-lg navbar-dark align-items-center">
+
+                                    <a class="navbar-brand  fw-bold logo-text" href="#">H.</a>
+
+
+                                    <button class="navbar-toggler border-0" type="button"
+                                        aria-controls="navbarSupportedContent" aria-expanded="false"
+                                        aria-label="Toggle navigation">
+                                        <i class="fa fa-bars fa-2x menu-icon-1"></i>
+
+                                    </button>
+
+                                    <button class="navbar-toggler2 border-0 d-none" type="button"
+                                        aria-controls="navbarSupportedContent" aria-expanded="false"
+                                        aria-label="Toggle navigation">
+                                        <i class="fas fa-times fa-2x menu-icon-2"></i>
+                                    </button>
+
+
+                                    <div class="collapse navbar-collapse justify-content-end"
+                                        id="navbarSupportedContent">
+                                        <ul class="navbar-nav  justify-content-between">
+                                            <li class="nav-item">
+                                                <a class="nav-link  text-white current-section" aria-current="page"
+                                                    href="#home">Home</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link text-white" href="#about">About</a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a class="nav-link text-white " href="#services">Services</a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a class="nav-link text-white " href="#portfolio">Portfolio</a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a class="nav-link text-white " href="#blog">Blog</a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a class="nav-link text-white " href="#contact">Contact</a>
+                                            </li>
+
+
+
+                                        </ul>
+
+                                        <div class="nav-item ms-lg-3 ms-0 mt-lg-0 mt-4">
+                                            <input type="checkbox" class="checkbox" id="checkbox">
+                                            <label for="checkbox" class="label">
+                                                <i class="feather-sun"></i>
+                                                <i class="feather-moon"> </i>
+                                                <div class="ball"></div>
+                                            </label>
+                                        </div>
+
+                                        <div class="nav-item ms-lg-3 ms-0 mt-lg-0 mt-4 language-switcher">
+                                            <input type="checkbox" class="checkbox" id="languageToggle">
+                                            <label for="languageToggle" class="label">
+
+                                                <span class="en">
+                                                    <i class="fa-solid fa-e"></i>
+                                                </span>
+
+                                                <span class="jp">
+                                                    <i class="fa-solid fa-j"></i>
+                                                </span>
+
+                                                <div class="ball"></div>
+                                            </label>
+                                        </div>
+
+                                </nav>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <section class="container-fluid " id="home">
+            <div class="row min-vh-100 justify-content-center align-items-center">
+                <div class="col-12">
+                    <div class="container">
+                        <div class="row mt-5 flex-column-reverse flex-md-row">
+                            <div class="col-12 col-md-6 col-xl-6">
+                                <div class="home-text">
+                                    <h4 class=" text-uppercase mb-4 wow animate__backInLeft animate__slow ">Hi There,
+                                    </h4>
+                                    <h1 class="text-white fw-bold mb-4 fontWidth wow animate__lightSpeedInLeft">
+                                        I Am <span class="type ">Web Developer</span>
+                                    </h1>
+
+                                    <p class="text-white mb-5 wow animate__jackInTheBox ">
+                                        I'm a Web Developer with extensive experience for over 2 years. My expertise is
+                                        to
+                                        create and Websites design, graphic design and many more...
+                                    </p>
+
+                                    <a href="#"
+                                        class="btn btn-color wow animate__zoomInUp animate__slower mb-5 mb-md-0">Hire
+                                        Me</a>
+                                </div>
+                            </div>
+
+
+                            <div class="col-12 col-md-6 col-xl-6">
+                                <div class="home-img wow animate__backInRight animate__slow">
+                                    <img src="img/me_1.png" class="img-fluid me-logo" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="color-switcher">
+                        <div class="color-switcher-btn">
+                            <i class="fas fa-cog "></i>
+                        </div>
+
+                        <h3 class="color">Select Your Favious color</h3>
+
+
+                        <div class="theme-buttons-container">
+                            <span class="theme-buttons" data-color="#08d665" style="background: #08d665;"></span>
+                            <span class="theme-buttons" data-color="#8e44ad" style="background: #8e44ad;"></span>
+                            <span class="theme-buttons" data-color="#293ad9" style="background: #293ad9;"></span>
+                            <span class="theme-buttons" data-color="#11afdd" style="background: #11afdd;"></span>
+                            <span class="theme-buttons" data-color="#e7b3b3" style="background: #e7b3b3;"></span>
+                            <span class="theme-buttons" data-color="#ccc222" style="background: #ccc222;"></span>
+                            <span class="theme-buttons" data-color="#fff666" style="background: #fff666;"></span>
+                            <span class="theme-buttons" data-color="#8383ff" style="background: #8383ff;"></span>
+                            <span class="theme-buttons" data-color="#a7ff83" style="background: #a7ff83;"></span>
+                            <span class="theme-buttons" data-color="#737320" style="background: #737320;"></span>
+                            <span class="theme-buttons" data-color="#24ddff" style="background: #24ddff;"></span>
+                            <span class="theme-buttons" data-color="#ff5959" style="background: #ff5959;"></span>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="top animate__animated" style="animation-iteration-count: infinite;">
+                        <a href="#home" class="">
+                            <i class="feather-arrow-up "></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid bg-secondary" id="about">
+            <div class="row">
+                <div class="col-12">
+                    <div class="container mt-5 py-5">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-xl-6">
+                                <div class="about-img">
+                                    <div class="about-text wow animate__zoomInLeft animate__slow mb-4">
+                                        <h1 class="text-white-50 text-center about-text-1"><b class="about-title">
+                                                About</b>
+                                            Me</h1>
+                                        <div class="divide"></div>
+                                    </div>
+
+                                    <div class="about-card">
+                                        <div class="circle"></div>
+
+                                        <div class="content">
+                                            <h2>H.</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
+                                                itaque
+                                                cupiditate voluptatibus </p>
+                                            <a href="#" class="btn btn-outline-dark">See More</a>
+                                        </div>
+                                        <img src="img/undraw_Bibliophile_re_xarc.svg" class="about-svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-12 col-md-6 col-xl-6">
+                                <div class="about-text-2">
+                                    <h1 class="text-white mb-5 wow animate__lightSpeedInRight animate__slow">Hello, I Am
+                                        <b class="about-title"> Web Developer</b>
+                                    </h1>
+
+                                    <p class="text-white mb-5 wow animate__backInRight animate__slow">á€€á€»á€½á€”á€ºá€á€±á€¬á€º
+                                        á€”á€¬á€™á€Šá€ºá€€á€á€±á€¬á€·
+                                        <b class="about-title">á€Ÿá€”á€ºá€á€±á€‘á€½á€”á€ºá€¸</b> á€•á€«á‹ á€¡á€á€€á€ºá€€ á€á€±á€¬á€· á€œá€€á€ºá€›á€¾á€­á€¡á€á€»á€­á€”á€ºá€™á€¾á€¬ 23 á€”á€¾á€…á€ºá€–á€¼á€…á€º
+                                        á€•á€«
+                                        á€á€šá€ºá‹ á€€á€»á€½á€”á€ºá€á€±á€¬á€ºá€Ÿá€¬ á€’á€® portfolio á€€á€­á€¯ á€¡á€á€€á€º 18 á€”á€¾á€…á€º <b class="about-title">MMS-IT</b>
+                                        á€€á€»á€±á€¬á€„á€ºá€¸á€™á€¾á€¬ á€€á€»á€±á€¬á€„á€ºá€¸á€á€¬á€¸á€á€…á€ºá€šá€±á€¬á€€á€ºá€¡á€”á€±á€”á€²á€· Web Development á€á€„á€ºá€á€”á€ºá€¸á€€á€­á€¯
+                                        á€á€€á€ºá€›á€±á€¬á€€á€ºá€”á€±á€á€²á€· á€¡á€á€»á€­á€”á€ºá€á€¯á€”á€ºá€¸á€€ á€›á€±á€¸á€á€¬á€¸á€‘á€¬á€¸á€á€²á€· Projecct á€á€…á€ºá€á€¯á€–á€¼á€…á€ºá€•á€«á€á€šá€ºá‹
+                                    </p>
+
+                                    <p class="text-white mb-5 wow animate__backInRight animate__slow">
+                                        á€¡á€á€¯á€œá€€á€ºá€›á€¾á€­á€™á€¾á€¬á€á€±á€¬á€· á€‚á€»á€•á€”á€ºá€”á€­á€¯á€„á€ºá€„á€¶ <b class="about-title"> á€¡á€­á€¯á€…á€€á€¬á€™á€¼á€­á€¯á€· </b>á€€ ECC
+                                        Computer
+                                        Collage á€™á€¾á€¬ IT(AI specialized) á€•á€Šá€¬á€›á€•á€ºá€€á€­á€¯ á€†á€€á€ºá€œá€€á€ºá€á€„á€ºá€€á€¼á€¬á€¸á€”á€±á€•á€«á€á€šá€ºá‹
+                                        á€¡á€á€¯á€œá€€á€ºá€›á€¾á€­ ECC Collage á€™á€¾á€¬á€á€„á€ºá€€á€¼á€¬á€¸á€”á€±á€á€²á€· Programming Language á€á€½á€±á€€á€á€±á€¬á€· <span
+                                            class="ecc about-title"></span> á€œá€±á€·á€œá€¬á€á€„á€ºá€€á€¼á€¬á€¸á€”á€±á€•á€«á€á€šá€ºá‹
+                                    </p>
+
+                                    <p class="text-white mb-5 wow animate__backInRight animate__slow">
+                                        á€œá€°á€€á€¼á€®á€¸á€™á€„á€ºá€¸á€á€­á€¯á€· á€œá€¯á€•á€ºá€„á€”á€ºá€¸á€¡á€á€½á€€á€ºá€œá€­á€¯á€¡á€•á€ºá€”á€±á€á€±á€¬
+                                        á€”á€Šá€ºá€¸á€•á€Šá€¬ á€¡á€á€€á€ºá€¡á€á€² á€™á€»á€¬á€¸á€€á€­á€¯ á€…á€­á€á€ºá€Šá€…á€ºá€™á€á€¶ á€˜á€² á€€á€»á€á€±á€¬á€ºá€€á€­á€¯ á€¡á€á€¯á€˜á€² á€†á€€á€ºá€á€½á€€á€ºá€œá€­á€¯á€€á€ºá€•á€«
+                                        á€€á€»á€±á€¸á€‡á€°á€¸á€á€„á€ºá€•á€«á€á€šá€ºá‹
+
+                                        <span>TO Do Link</span>
+                                    </p>
+
+                                    <div class="mb-4 text-white wow animate__fadeInBottomRight">
+
+                                        á€€á€»á€á€±á€¬á€º <b class="about-title">MMS-IT</b>á€€ á€”á€± <span
+                                            class="learn about-title"></span>
+                                        á€á€­á€¯á€·á€€á€­á€¯á€œá€±á€·á€œá€¬á€á€„á€ºá€šá€°á€‘á€¬á€¸á€•á€«á€á€Šá€ºá‹
+
+                                    </div>
+
+
+
+                                    <button type="button" class="btn btn-color wow animate__fadeInUpBig" disabled
+                                        aria-disabled="true">Download CV</button>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid  services" id="services">
+            <div class="row">
+                <div class="col-12">
+                    <section class="container  ">
+                        <div class="row mb-5 mt-5 py-5 g-5">
+                            <div class="col-12 wow animate__backInDown">
+                                <h1 class="text-white text-center text-uppercase services-title">My <b
+                                        class="fw-bolder services-title-1">Services</b></h1>
+                                <div class="divide"></div>
+                            </div>
+
+
+                            <div class="col-12 col-md-6 col-xl-4">
+                                <div class="wow animate__fadeInTopLeft animate__slow">
+                                    <div class="card service-card">
+                                        <div class="card-body">
+                                            <div class="icon-bg py-1 mb-5 ">
+                                                <img src="img/icon-responsive.svg" class="icon-img" alt="">
+
+                                            </div>
+
+                                            <div class="text-center">
+                                                <h4 class="text-white text-uppercase mb-4 services-title">Web Design
+                                                </h4>
+                                                <p class="text-white services-p">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                                                    venenatis
+                                                    lectus tortor et congue felis laoreet ac
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-xl-4">
+                                <div class="wow animate__fadeInDown">
+                                    <div class="card service-card">
+                                        <div class="card-body">
+                                            <div class="icon-bg py-1 mb-5">
+                                                <img src="img/icon-email.svg" class="icon-img" alt="">
+
+                                            </div>
+
+                                            <div class="text-center">
+                                                <h4 class="text-white text-uppercase mb-4 services-title">Development
+                                                </h4>
+                                                <p class="text-white services-p">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                                                    venenatis
+                                                    lectus tortor et congue felis laoreet ac
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-xl-4">
+                                <div class="wow animate__fadeInTopRight animate__slow">
+                                    <div class="card service-card">
+                                        <div class="card-body">
+                                            <div class="icon-bg py-1 mb-5">
+                                                <img src="img/icon-lock.svg" class="icon-img" alt="">
+
+                                            </div>
+
+                                            <div class="text-center">
+                                                <h4 class="text-white text-uppercase mb-4 services-title">Graphic Design
+                                                </h4>
+                                                <p class="text-white services-p">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                                                    venenatis
+                                                    lectus tortor et congue felis laoreet ac
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-xl-4">
+                                <div class="wow animate__bounceInLeft animate__slow">
+                                    <div class="card service-card">
+                                        <div class="card-body">
+                                            <div class="icon-bg py-1 mb-5">
+                                                <img src="img/icon-easy.svg" class="icon-img" alt="">
+
+                                            </div>
+
+                                            <div class="text-center">
+                                                <h4 class="text-white text-uppercase mb-4 services-title">Responsive
+                                                    Design
+                                                </h4>
+                                                <p class="text-white services-p">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                                                    venenatis
+                                                    lectus tortor et congue felis laoreet ac
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-xl-4">
+                                <div class="wow animate__bounceInUp ">
+                                    <div class="card service-card">
+                                        <div class="card-body">
+                                            <div class="icon-bg py-1 mb-5">
+                                                <img src="img/icon-lock.svg" class="icon-img" alt="">
+
+                                            </div>
+
+                                            <div class="text-center">
+                                                <h4 class="text-white text-uppercase mb-4 services-title">Marketing</h4>
+                                                <p class="text-white services-p">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                                                    venenatis
+                                                    lectus tortor et congue felis laoreet ac
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-xl-4">
+                                <div class="wow animate__bounceInRight animate__slow">
+                                    <div class="card service-card">
+                                        <div class="card-body">
+                                            <div class="icon-bg py-1 mb-5">
+                                                <img src="img/icon-responsive.svg" class="icon-img" alt="">
+
+                                            </div>
+
+                                            <div class="text-center">
+                                                <h4 class="text-white text-uppercase mb-4 services-title">Support</h4>
+                                                <p class="text-white services-p">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                                                    venenatis
+                                                    lectus tortor et congue felis laoreet ac
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div><!--end row-->
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid bg-secondary portfolio" id="portfolio">
+            <div class="row">
+                <div class="col-12">
+                    <section class="container">
+                        <div class="row portfolio-grid">
+                            <div class="col-12 portfolio-intro">
+                                <div class="col-12 mb-5 mt-5 py-5">
+                                    <div class="py-5 wow animate__backInDown">
+                                        <h1 class="text-white text-center text-uppercase portfolio-title">Selected <b
+                                                class="fw-bolder portfolio-title-1">Work</b></h1>
+                                        <div class="divide"></div>
+                                    </div>
+
+                                    <p class="text-white-50 py-3 portfolio-p text-center wow animate__heartBeat">
+                                        A focused collection of UI, web, and app projects with clear outcomes and
+                                        practical use cases.</p>
+
+
+                                    <ul class="filter text-white">
+                                        <li class="list wow animate__fadeInRightBig active" data-filter="all"
+                                            data-current="all">All</li>
+                                        <li class="list wow animate__fadeInRightBig animate__slow" data-filter="one"
+                                            data-current="one">Web</li>
+                                        <li class="list wow animate__fadeInRightBig animate__slower" data-filter="two"
+                                            data-current="two">UI</li>
+                                        <li class="list wow animate__fadeInRightBig animate__slower" data-filter="three"
+                                            data-current="three">Apps</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                            <div class="col-12 col-md-4 col-xl-4 portfolio-stack">
+                                <div class="itemBox one wow animate__fadeInUpBig">
+                                    <div class="project-card">
+                                        <a class="venobox project-media" data-gall="myGallery"
+                                            href="img/portfolio-01.jpg">
+                                            <img src="img/portfolio-01.jpg" class="img-fluid project-thumb"
+                                                alt="Personal Portfolio">
+                                        </a>
+                                        <div class="project-body">
+                                            <h3 class="project-title">Personal Portfolio</h3>
+                                            <p class="project-desc">Single-page portfolio focused on clean storytelling,
+                                                dark/light theme, and performance.</p>
+                                            <div class="project-tags">
+                                                <span class="tag">HTML</span>
+                                                <span class="tag">CSS</span>
+                                                <span class="tag">JavaScript</span>
+                                            </div>
+                                            <div class="project-links">
+                                                <a href="#" class="project-link">Live</a>
+                                                <a href="#" class="project-link">Code</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="itemBox one wow animate__fadeInUpBig animate__slow">
+                                    <div class="project-card">
+                                        <a class="venobox project-media" data-gall="myGallery"
+                                            href="img/portfolio-02.jpg">
+                                            <img src="img/portfolio-02.jpg" class="img-fluid project-thumb"
+                                                alt="Landing Page">
+                                        </a>
+                                        <div class="project-body">
+                                            <h3 class="project-title">Landing Page</h3>
+                                            <p class="project-desc">High-converting landing page with clear CTA, social
+                                                proof, and responsive layout.</p>
+                                            <div class="project-tags">
+                                                <span class="tag">UI</span>
+                                                <span class="tag">Responsive</span>
+                                                <span class="tag">Marketing</span>
+                                            </div>
+                                            <div class="project-links">
+                                                <a href="#" class="project-link">Live</a>
+                                                <a href="#" class="project-link">Case</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-12 col-md-4 col-xl-4 portfolio-stack">
+                                <div class="itemBox three wow animate__bounceInDown">
+                                    <div class="project-card">
+                                        <a class="venobox project-media" data-gall="myGallery" href="img/todolist.png">
+                                            <img src="img/todolist.png" class="img-fluid project-thumb"
+                                                alt="Task Manager">
+                                        </a>
+                                        <div class="project-body">
+                                            <h3 class="project-title">Task Manager</h3>
+                                            <p class="project-desc">To-do app with filters, quick actions, and
+                                                localStorage persistence.</p>
+                                            <div class="project-tags">
+                                                <span class="tag">JavaScript</span>
+                                                <span class="tag">LocalStorage</span>
+                                                <span class="tag">App</span>
+                                            </div>
+                                            <div class="project-links">
+                                                <a href="#" class="project-link">Live</a>
+                                                <a href="#" class="project-link">Code</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="itemBox two wow animate__bounceInDown animate__slow">
+                                    <div class="project-card">
+                                        <a class="venobox project-media" data-gall="myGallery"
+                                            href="img/portfolio-04.jpg">
+                                            <img src="img/portfolio-04.jpg" class="img-fluid project-thumb"
+                                                alt="Product Showcase">
+                                        </a>
+                                        <div class="project-body">
+                                            <h3 class="project-title">Product Showcase</h3>
+                                            <p class="project-desc">Clean product grid with highlights, motion cues, and
+                                                modular sections.</p>
+                                            <div class="project-tags">
+                                                <span class="tag">UI</span>
+                                                <span class="tag">Grid</span>
+                                                <span class="tag">UX</span>
+                                            </div>
+                                            <div class="project-links">
+                                                <a href="#" class="project-link">Live</a>
+                                                <a href="#" class="project-link">Case</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-12 col-md-4 col-xl-4 portfolio-stack">
+                                <div class="itemBox two wow animate__bounceInRight">
+                                    <div class="project-card">
+                                        <a class="venobox project-media" data-gall="myGallery"
+                                            href="img/portfolio-03.jpg">
+                                            <img src="img/portfolio-03.jpg" class="img-fluid project-thumb"
+                                                alt="Photo Gallery">
+                                        </a>
+                                        <div class="project-body">
+                                            <h3 class="project-title">Photo Gallery</h3>
+                                            <p class="project-desc">Minimal gallery with lightbox, category filters, and
+                                                optimized images.</p>
+                                            <div class="project-tags">
+                                                <span class="tag">Gallery</span>
+                                                <span class="tag">Lightbox</span>
+                                                <span class="tag">UI</span>
+                                            </div>
+                                            <div class="project-links">
+                                                <a href="#" class="project-link">Live</a>
+                                                <a href="#" class="project-link">Code</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="itemBox three wow animate__bounceInRight">
+                                    <div class="project-card">
+                                        <a class="venobox project-media" data-gall="myGallery"
+                                            href="img/portfolio-05.jpg">
+                                            <img src="img/portfolio-05.jpg" class="img-fluid project-thumb"
+                                                alt="Blog UI Concept">
+                                        </a>
+                                        <div class="project-body">
+                                            <h3 class="project-title">Blog UI Concept</h3>
+                                            <p class="project-desc">Readable editorial layout with card previews,
+                                                typography hierarchy, and tag system.</p>
+                                            <div class="project-tags">
+                                                <span class="tag">Typography</span>
+                                                <span class="tag">Cards</span>
+                                                <span class="tag">UI</span>
+                                            </div>
+                                            <div class="project-links">
+                                                <a href="#" class="project-link">Live</a>
+                                                <a href="#" class="project-link">Case</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="container py-5  mb-5 blog" id="blog">
+            <div class="row">
+                <div class="col-12">
+                    <div class="py-5 mb-5 mt-5 py-5 wow animate__backInDown">
+                        <h1 class="text-white text-center text-uppercase blog-title">My <b
+                                class="fw-bolder  blog-title-1">BLOG</b></h1>
+                        <div class="divide"></div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-xl-12">
+                    <div class="card-group">
+                        <div class="card p-xl-5 p-lg-3 blog-card wow animate__fadeInBottomLeft animate__slow">
+                            <div class="card-body">
+                                <div class="">
+                                    <p class="card-text text-white-50 blog-text-1">JUNE 2012-2016</p>
+                                    <h4 class="card-title fw-bolder text-white blog-text">UI/UX Design</h4>
+                                    <P class="text-white-50 blog-text-1">Adobe Inc.</P>
+                                    <p class="card-text text-white-50 blog-text-1">Lorem ipsum dolor sit amet, coectetur
+                                        adipisicing elit, sed do eiusmod temp incididunt ut labore.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="card p-xl-5 p-lg-3 blog-card wow animate__fadeInUpBig">
+                            <div class="card-body ">
+                                <div class="">
+                                    <p class="card-text text-white-50 blog-text-1">JUNE 2012-2016</p>
+                                    <h4 class="card-title fw-bolder text-white blog-text">Product Designer</h4>
+                                    <P class="text-white-50 blog-text-1">Adobe Inc.</P>
+                                    <p class="card-text text-white-50 blog-text-1"> Lorem ipsum dolor sit amet,
+                                        coectetur
+                                        adipisicing elit, sed do eiusmod temp incididunt ut labore.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="card p-xl-5 p-lg-3 blog-card wow animate__fadeInBottomRight animate__slow">
+                            <div class="card-body">
+     7ã^½¶‰Ëkºwµç]ÜÜÈˆÃBˆ™\œÚ[ÛˆˆKŒÌH‹Bˆœ™\ÛÛ™YˆšÎ‹ËÜ™YÚ\İK›œZœË›Ü™ËÜÜİÜÜËËKÜÜİÜÜËNKŒÌKŞˆ‹Bˆš[YÜš]HˆœÚMLL‹VUX•ÖPÙÑ\Û“PUšÚ•[–XJÒÛP‘ÜÚR]ÑMÙŒÌÌĞ]V“UXÕÍ’ÙÕŞŞ”•JÜŒİKĞÊÖÑ[“SMXMÔÙÏOH‹Bˆ™]ˆˆYKBˆ™[™[™ÈˆÃBˆÃBˆ\Hˆ›Ü[˜ÛÛXİ]™H‹Bˆ\›ˆšÎ‹ËÛÜ[˜ÛÛXİ]™K˜ÛÛKÜÜİÜÜËÈƒBˆKBˆÃBˆ\HˆY[Y‹Bˆ\›ˆšÎ‹ËİY[Y˜ÛÛKÙ[™[™ËÙÚ]X‹ÛœKÜÜİÜÜÈƒBˆKBˆÃBˆ\Hˆ™Ú]Xˆ‹Bˆ\›ˆšÎ‹ËÙÚ]X‹˜ÛÛKÜÜÛœÛÜœËØZHƒBˆCBˆKBˆ›XÙ[œÙHˆ“RU‹Bˆ™\[™[˜ÚY\ÈˆÃBˆ›˜[›ÚYˆ—ŒËŒËŒŒ‹BˆœXÛØÛÛÜœÈˆ—ŒKŒKŒH‹BˆœÛİ\˜ÙK[X\ZœÈˆ—ŒKŒ‹ŒˆƒBˆKBˆ™[™Ú[™\ÈˆÃBˆ››ÙHˆ—ŒLŒLˆLMƒBˆCBˆKBˆ››ÙWÛ[Ù[\ËÜ™XXİˆÃBˆ™\œÚ[ÛˆˆŒNKŒËŒH‹Bˆœ™\ÛÛ™YˆšÎ‹ËÜ™YÚ\İK›œZœË›Ü™ËÜ™XXİËKÜ™XXİLNKŒËŒKŞˆ‹Bˆš[YÜš]HˆœÚMLL‹TSšÙÛœ™Õ•ÕÔQÍN]QÜĞTŒÚŒÒ™MXİÌ˜ÜÛ’]˜ÚV’™ÙLPÔ˜[™ULYÚ•VÛYÓÌÎ]ÏOH‹Bˆ›XÙ[œÙHˆ“RU‹Bˆ™[™Ú[™\ÈˆÃBˆ››ÙHˆLŒLŒƒBˆCBˆKBˆ››ÙWÛ[Ù[\ËÜ™XXİYÛHˆÃBˆ™\œÚ[ÛˆˆŒNKŒËŒH‹Bˆœ™\ÛÛ™YˆšÎ‹ËÜ™YÚ\İK›œZœË›Ü™ËÜ™XXİYÛKËKÜ™XXİYÛKLNKŒËŒKŞˆ‹Bˆš[YÜš]HˆœÚMLL‹VLTLÛPÌS“PĞTÜÌÚŠÙ˜P‹Şœ]Ô™ÌYN
+ÍŒV•’SYÍĞ˜––“XÒ]Z™™ÙRSJÖ™PØ]”TÔOOH‹Bˆ›XÙ[œÙHˆ“RU‹Bˆ™\[™[˜ÚY\ÈˆÃBˆœØÚY[\ˆˆ—ŒŒŒƒBˆKBˆœY\‘\[™[˜ÚY\ÈˆÃBˆœ™XXİˆ—ŒNKŒËŒHƒBˆCBˆKBˆ››ÙWÛ[Ù[\ËÜ›ÛİÛˆˆÃBˆ™\œÚ[ÛˆˆŒKŒ‹ŒM‹Bˆœ™\ÛÛ™YˆšÎ‹ËÜ™YÚ\İK›œZœË›Ü™ËÜ›ÛİÛ‹ËKÜ›ÛİÛ‹LKŒ‹ŒMŞˆ‹Bˆš[YÜš]HˆœÚMLL‹YU•STRÓØÕ\\”‘M•PN™YĞSP‘RMÙÚÙÕ“Ù•œİ”Ì–[JÎÒÚÔÒÒLÍÕTQ’–šÓÏOH‹Bˆ™]ˆˆYKBˆ›XÙ[œÙHˆ“RU‹Bˆ™\[™[˜ÚY\ÈˆÃBˆŞË\›Ú™Xİİ\\ÈˆLŒMMŒ‹Bˆ›ÛİÛ‹ÜYÚ[][Èˆ—ŒKŒŒƒBˆKBˆ˜š[ˆˆÃBˆœ›ÛİÛˆˆ˜š[‹ØÛK›ZœÈƒBˆKBˆ™[™Ú[™\ÈˆÃBˆ››ÙHˆ—ŒŒŒNKŒLŒ‹ŒL‹ŒƒBˆKBˆ›Ü[Û˜[\[™[˜ÚY\ÈˆÃBˆ›ÛİÛ‹Øš[™[™ËX[™›ÚYX\›KYXXšHˆŒKŒ‹ŒM‹Bˆ›ÛİÛ‹Øš[™[™ËX[™›ÚYX\›MˆŒKŒ‹ŒM‹Bˆ›ÛİÛ‹Øš[™[™ËY\Ú[‹X\›MˆŒKŒ‹ŒM‹Bˆ›ÛİÛ‹Øš[™[™ËY\Ú[‹^ˆŒKŒ‹ŒM‹Bˆ›ÛİÛ‹Øš[™[™ËYœ™YXœÙ^ˆŒKŒ‹ŒM‹Bˆ›ÛİÛ‹Øš[™[™Ë[[^X\›KYÛYXXšZˆˆŒKŒ‹ŒM‹Bˆ›ÛİÛ‹Øš[™[™Ë[[^X\›MYÛHˆŒKŒ‹ŒM‹Bˆ›ÛİÛ‹Øš[™[™Ë[[^X\›M[]\ÛˆŒKŒ‹ŒM‹Bˆ›ÛİÛ‹Øš[™[™Ë[[^\ÍYÛHˆŒKŒ‹ŒM‹Bˆ›ÛİÛ‹Øš[™[™Ë[[^\ÌÎLYÛHˆŒKŒ‹ŒM‹Bˆ›ÛİÛ‹Øš[™[™Ë[[^^YÛHˆŒKŒ‹ŒM‹Bˆ›ÛİÛ‹Øš[™[™Ë[[^^[]\ÛˆŒKŒ‹ŒM‹Bˆ›ÛİÛ‹Øš[™[™Ë[Ü[š\›[ÛKX\›MˆŒKŒ‹ŒM‹Bˆ›ÛİÛ‹Øš[™[™Ë]Ú[ŒÌ‹X\›M[\İ˜ÈˆŒKŒ‹ŒM‹Bˆ›ÛİÛ‹Øš[™[™Ë]Ú[ŒÌ‹^[\İ˜ÈˆŒKŒ‹ŒMƒBˆCBˆKBˆ››ÙWÛ[Ù[\ËÜØÚY[\ˆˆÃBˆ™\œÚ[ÛˆˆŒŒŒ‹Bˆœ™\ÛÛ™YˆšÎ‹ËÜ™YÚ\İK›œZœË›Ü™ËÜØÚY[\‹ËKÜØÚY[\‹LŒŒŞˆ‹Bˆš[YÜš]HˆœÚMLL‹Z[Ü™ÛRZÒ]Î
+ÜP–ÛM”š”Q‹ŞXÑV[RŞ^•TÒ]Ô˜V’Z
+Ô[”NV]LŒRÒ‘QLJŞĞ›RœØŞ]ÏOH‹Bˆ›XÙ[œÙHˆ“RUƒBˆKBˆ››ÙWÛ[Ù[\ËÜÛİ\˜ÙK[X\ZœÈˆÃBˆ™\œÚ[ÛˆˆŒKŒ‹Œˆ‹Bˆœ™\ÛÛ™YˆšÎ‹ËÜ™YÚ\İK›œZœË›Ü™ËÜÛİ\˜ÙK[X\ZœËËKÜÛİ\˜ÙK[X\ZœËLKŒ‹Œ‹Şˆ‹Bˆš[YÜš]HˆœÚMLL‹RÑÚ‹ÎMŞÍXV•‘
+ÒRÌZÓÒSVY”ÚÓÑ“”Z“‘ÌÛÕÌTTŞ]ÛÌ\ÕÓKÕQQŞ“Ó‹ÓR]ÑY“–”ÕÏOH‹Bˆ™]ˆˆYKBˆ›XÙ[œÙHˆ”ÑLËPÛ]\ÙH‹Bˆ™[™Ú[™\ÈˆÃBˆ››ÙHˆLŒLŒƒBˆCBˆKBˆ››ÙWÛ[Ù[\Ëİ[YÛØ˜HˆÃBˆ™\œÚ[ÛˆˆŒŒ‹ŒMÈ‹Bˆœ™\ÛÛ™YˆšÎ‹ËÜ™YÚ\İK›œZœË›Ü™Ëİ[YÛØ˜KËKİ[YÛØ˜KLŒ‹ŒMËŞˆ‹Bˆš[YÜš]HˆœÚMLL‹]Ö‹Ù\ÜRÛY•ÜYššRÒ“İĞÓ‘›™[œ•ËØÖZ•‘İZĞ™•™ØÓ’Óœ›ÛZ“ÕšXÎ^^SMX[ÙÑ”^UL™ÏOH‹Bˆ™]ˆˆYKBˆ›XÙ[œÙHˆ“RU‹Bˆ™\[™[˜ÚY\ÈˆÃBˆ™™\ˆˆ—‹KŒ‹BˆœXÛÛX]Úˆ—ŒƒBˆKBˆ™[™Ú[™\ÈˆÃBˆ››ÙHˆLL‹ŒŒƒBˆKBˆ™[™[™ÈˆÃBˆ\›ˆšÎ‹ËÙÚ]X‹˜ÛÛKÜÜÛœÛÜœËÔİ\\˜Ú\Q]ˆƒBˆCBˆKBˆ››ÙWÛ[Ù[\Ëİ[YÛØ˜KÛ›ÙWÛ[Ù[\ËÙ™\ˆˆÃBˆ™\œÚ[Ûˆˆ‹KŒ‹Bˆœ™\ÛÛ™YˆšÎ‹ËÜ™YÚ\İK›œZœË›Ü™ËÙ™\‹ËKÙ™\‹M‹KŒŞˆ‹Bˆš[YÜš]HˆœÚMLL‹]X–]˜XÓÜÌ”‘ÜTšÜÚ•VY
+ÔÑÙ“NÚJÑTœÕĞUZ“Q’‘JÌšØ[RÚ•ÓÛÜ’ÖPš]Ğ[SLÓ[–ÏOH‹Bˆ™]ˆˆYKBˆ›XÙ[œÙHˆ“RU‹Bˆ™[™Ú[™\ÈˆÃBˆ››ÙHˆLL‹ŒŒƒBˆKBˆœY\‘\[™[˜ÚY\ÈˆÃBˆœXÛÛX]Úˆ—ŒÈƒBˆKBˆœY\‘\[™[˜ÚY\ÓY]HˆÃBˆœXÛÛX]ÚˆÃBˆ›Ü[Û˜[ˆYCBˆCBˆCBˆKBˆ››ÙWÛ[Ù[\Ëİ[YÛØ˜KÛ›ÙWÛ[Ù[\ËÜXÛÛX]ÚˆÃBˆ™\œÚ[ÛˆˆŒÈ‹Bˆœ™\ÛÛ™YˆšÎ‹ËÜ™YÚ\İK›œZœË›Ü™ËÜXÛÛX]ÚËKÜXÛÛX]ÚMŒËŞˆ‹Bˆš[YÜš]HˆœÚMLL‹\XÒNL’UÜRœÑLR’ÓYÑÛKÙ’[•Í”[”ÚRRZ‘ÓÜØÑLŞ\’ÙUSÕ\ÔNÕ›S’ŒšÒMŞZÑĞOOH‹Bˆ™]ˆˆYKBˆ›XÙ[œÙHˆ“RU‹Bˆ™[™Ú[™\ÈˆÃBˆ››ÙHˆLLˆƒBˆKBˆ™[™[™ÈˆÃBˆ\›ˆšÎ‹ËÙÚ]X‹˜ÛÛKÜÜÛœÛÜœËÚ›ÛœØÚ[šÙ\ƒBˆCBˆKBˆ››ÙWÛ[Ù[\Ëİ\\ØÜš\ˆÃBˆ™\œÚ[ÛˆˆËŒŒˆ‹Bˆœ™\ÛÛ™YˆšÎ‹ËÜ™YÚ\İK›œZœË›Ü™Ëİ\\ØÜš\ËKİ\\ØÜš\MËŒŒ‹Şˆ‹Bˆš[YÜš]HˆœÚMLL‹N–X]NM›ÌÓ’ÓÚš’ÚKÜS‘ËÕÍZšØ™M\ÚPX–‹ÍU\ÕÜ[ŒÚ™Ó‘ŞÜÔ’Ö•Õ^Ô•]•Ô••SOOH‹Bˆ™]ˆˆYKBˆ›XÙ[œÙHˆ\XÚKL‹Œ‹Bˆ˜š[ˆˆÃBˆØÈˆ˜š[‹İØÈƒBˆKBˆ™[™Ú[™\ÈˆÃBˆ››ÙHˆLM‹ŒŒŒƒBˆKBˆ›Ü[Û˜[\[™[˜ÚY\ÈˆÃBˆ\\ØÜš\İ\\ØÜš\XZ^\ÍˆËŒŒˆ‹Bˆ\\ØÜš\İ\\ØÜš\Y\Ú[‹X\›MˆËŒŒˆ‹Bˆ\\ØÜš\İ\\ØÜš\Y\Ú[‹^ˆËŒŒˆ‹Bˆ\\ØÜš\İ\\ØÜš\Yœ™YXœÙX\›MˆËŒŒˆ‹Bˆ\\ØÜš\İ\\ØÜš\Yœ™YXœÙ^ˆËŒŒˆ‹Bˆ\\ØÜš\İ\\ØÜš\[[^X\›HˆËŒŒˆ‹Bˆ\\ØÜš\İ\\ØÜš\[[^X\›MˆËŒŒˆ‹Bˆ\\ØÜš\İ\\ØÜš\[[^[ÛÛ™ÍˆËŒŒˆ‹Bˆ\\ØÜš\İ\\ØÜš\[[^[Z\Í[ˆËŒŒˆ‹Bˆ\\ØÜš\İ\\ØÜš\[[^\ÍˆËŒŒˆ‹Bˆ\\ØÜš\İ\\ØÜš\[[^\š\ØİˆËŒŒˆ‹Bˆ\\ØÜš\İ\\ØÜš\[[^\ÌÎLˆËŒŒˆ‹Bˆ\\ØÜš\İ\\ØÜš\[[^^ˆËŒŒˆ‹Bˆ\\ØÜš\İ\\ØÜš\[™]œÙX\›MˆËŒŒˆ‹Bˆ\\ØÜš\İ\\ØÜš\[™]œÙ^ˆËŒŒˆ‹Bˆ\\ØÜš\İ\\ØÜš\[Ü[˜œÙX\›MˆËŒŒˆ‹Bˆ\\ØÜš\İ\\ØÜš\[Ü[˜œÙ^ˆËŒŒˆ‹Bˆ\\ØÜš\İ\\ØÜš\\İ[›ÜË^ˆËŒŒˆ‹Bˆ\\ØÜš\İ\\ØÜš\]Ú[ŒÌ‹X\›MˆËŒŒˆ‹Bˆ\\ØÜš\İ\\ØÜš\]Ú[ŒÌ‹^ˆËŒŒˆƒBˆCBˆKBˆ››ÙWÛ[Ù[\Ëİš]HˆÃBˆ™\œÚ[ÛˆˆŒË‹Bˆœ™\ÛÛ™YˆšÎ‹ËÜ™YÚ\İK›œZœË›Ü™Ëİš]KËKİš]KNŒËŞˆ‹Bˆš[YÜš]HˆœÚMLL‹RYNš”’QÓ‘UĞİ™“”ØÛÖ”U™˜ÖS\›ÜÑÒÒİJÚPP\İQİ›QX‹ÚÙÌ™KÚ”ÎÍTOOH‹Bˆ™]ˆˆYKBˆ›XÙ[œÙHˆ“RU‹Bˆ™\[™[˜ÚY\ÈˆÃBˆ›YÚš[™ØÜÜÈˆ—ŒKŒÌËŒ‹BˆœXÛÛX]Úˆ—ŒÈ‹BˆœÜİÜÜÈˆ—KŒH‹Bˆœ›ÛİÛˆˆŸŒKŒ‹ŒLˆ‹Bˆ[YÛØ˜Hˆ—ŒŒ‹ŒMÈƒBˆKBˆ˜š[ˆˆÃBˆš]Hˆ˜š[‹İš]KšœÈƒBˆKBˆ™[™Ú[™\ÈˆÃBˆ››ÙHˆ—ŒŒŒNKŒLŒ‹ŒL‹ŒƒBˆKBˆ™[™[™ÈˆÃBˆ\›ˆšÎ‹ËÙÚ]X‹˜ÛÛKİš]ZœËİš]OÜÜÛœÛÜLHƒBˆKBˆ›Ü[Û˜[\[™[˜ÚY\ÈˆÃBˆ™œÙ]™[ÈˆŸŒ‹ŒËŒÈƒBˆKBˆœY\‘\[™[˜ÚY\ÈˆÃBˆ\\ËÛ›ÙHˆ—ŒŒŒNKŒLŒ‹ŒL‹Œ‹Bˆš]ZœËÙ]ÛÛÈˆ—ŒËŒH‹Bˆ™\ØZ[ˆ—ŒŒËŒŒŒŒ‹Bˆšš]HˆLKŒŒKŒ‹Bˆ›\ÜÈˆ—ŒŒ‹BˆœØ\ÜÈˆ—ŒKÌŒ‹BˆœØ\ÜËY[X™YYˆ—ŒKÌŒ‹Bˆœİ[\ÈˆLM‹BˆœİYØ\œÜÈˆ—KŒŒ‹Bˆ\œÙ\ˆˆ—KŒM‹Œ‹BˆŞˆ—ŒH‹BˆX[[ˆ—Œ‹ŒˆƒBˆKBˆœY\‘\[™[˜ÚY\ÓY]HˆÃBˆ\\ËÛ›ÙHˆÃBˆ›Ü[Û˜[ˆYCBˆKBˆš]ZœËÙ]ÛÛÈˆÃBˆ›Ü[Û˜[ˆYCBˆKBˆ™\ØZ[ˆÃBˆ›Ü[Û˜[ˆYCBˆKBˆšš]HˆÃBˆ›Ü[Û˜[ˆYCBˆKBˆ›\ÜÈˆÃBˆ›Ü[Û˜[ˆYCBˆKBˆœØ\ÜÈˆÃBˆ›Ü[Û˜[ˆYCBˆKBˆœØ\ÜËY[X™YYˆÃBˆ›Ü[Û˜[ˆYCBˆKBˆœİ[\ÈˆÃBˆ›Ü[Û˜[ˆYCBˆKBˆœİYØ\œÜÈˆÃBˆ›Ü[Û˜[ˆYCBˆKBˆ\œÙ\ˆˆÃBˆ›Ü[Û˜[ˆYCBˆKBˆŞˆÃBˆ›Ü[Û˜[ˆYCBˆKBˆX[[ˆÃBˆ›Ü[Û˜[ˆYCBˆCBˆCBˆKBˆ››ÙWÛ[Ù[\Ëİš]KÛ›ÙWÛ[Ù[\ËÜXÛÛX]ÚˆÃBˆ™\œÚ[ÛˆˆŒÈ‹Bˆœ™\ÛÛ™YˆšÎ‹ËÜ™YÚ\İK›œZœË›Ü™ËÜXÛÛX]ÚËKÜXÛÛX]ÚMŒËŞˆ‹Bˆš[YÜš]HˆœÚMLL‹\XÒNL’UÜRœÑLR’ÓYÑÛKÙ’[•Í”[”ÚRRZ‘ÓÜØÑLŞ\’ÙUSÕ\ÔNÕ›S’ŒšÒMŞZÑĞOOH‹Bˆ™]ˆˆYKBˆ›XÙ[œÙHˆ“RU‹Bˆ™[™Ú[™\ÈˆÃBˆ››ÙHˆLLˆƒBˆKBˆ™[™[™ÈˆÃBˆ\›ˆšÎ‹ËÙÚ]X‹˜ÛÛKÜÜÛœÛÜœËÚ›ÛœØÚ[šÙ\ƒBˆCBˆCBˆCBŸCB
