@@ -1,0 +1,432 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @screen sm {
+    .container {
+      max-width: 540px;
+    }
+  }
+
+  @screen md {
+    .container {
+      max-width: 720px;
+    }
+  }
+
+  @screen lg {
+    .container {
+      max-width: 960px;
+    }
+  }
+
+  @screen xl {
+    .container {
+      max-width: 1140px;
+    }
+  }
+         width: auto;
+         flex-wrap: wrap;
+
+
+  @screen xxl {
+    .container {
+      max-width: 1320px;
+    }
+  }
+
+  .container-fluid {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(var(--gutter-x, 1.5rem) / -2);
+    margin-right: calc(var(--gutter-x, 1.5rem) / -2);
+    row-gap: var(--gutter-y, 0);
+  }
+
+  .row > [class*="col-"] {
+    padding-left: calc(var(--gutter-x, 1.5rem) / 2);
+    padding-right: calc(var(--gutter-x, 1.5rem) / 2);
+  }
+
+  .g-5 {
+    --gutter-x: 3rem;
+    --gutter-y: 3rem;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+
+  .col-md-4 {
+    width: 100%;
+  }
+
+  @screen md {
+    .col-md-4 {
+      width: 33.333333%;
+    }
+  }
+
+  .col-md-5 {
+    width: 100%;
+  }
+
+  @screen md {
+    .col-md-5 {
+      width: 41.666667%;
+    }
+  }
+
+  .col-md-6 {
+    width: 100%;
+  }
+
+  @screen md {
+    .col-md-6 {
+      width: 50%;
+    }
+  }
+
+  .col-md-7 {
+    width: 100%;
+  }
+
+  @screen md {
+    .col-md-7 {
+      width: 58.333333%;
+    }
+  }
+
+  .col-lg-6 {
+    width: 100%;
+  }
+
+  @screen lg {
+    .col-lg-6 {
+      width: 50%;
+    }
+  }
+
+  .col-xl-4 {
+    width: 100%;
+  }
+
+  @screen xl {
+    .col-xl-4 {
+      width: 33.333333%;
+    }
+  }
+
+  .col-xl-5 {
+    width: 100%;
+  }
+
+  @screen xl {
+    .col-xl-5 {
+      width: 41.666667%;
+    }
+  }
+
+  .col-xl-6 {
+    width: 100%;
+  }
+
+  @screen xl {
+    .col-xl-6 {
+      width: 50%;
+    }
+  }
+
+  .col-xl-7 {
+    width: 100%;
+  }
+
+  @screen xl {
+    .col-xl-7 {
+      width: 58.333333%;
+    }
+  }
+
+  .col-xl-12 {
+    width: 100%;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+  .navbar-brand {
+    display: inline-block;
+      margin-right: auto;
+    }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+      gap: 1rem;
+    }
+
+  @screen lg {
+    .navbar-nav {
+      flex-direction: row;
+      align-items: center;
+        gap: 1.5rem;
+      }
+  }
+
+  .nav-item {
+    display: block;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 0.5rem 0.75rem;
+      font-weight: 600;
+    }
+
+  .collapse {
+    display: none;
+  }
+
+  .collapse.show {
+    display: block;
+  }
+
+  .navbar .collapse,
+  .navbar .collapse.show,
+  .navbar-collapse,
+  .navbar-collapse.show {
+    visibility: visible;
+  }
+
+  .navbar-collapse {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+      align-items: flex-start;
+    }
+
+  .navbar-collapse.show {
+    display: flex;
+  }
+
+  @screen lg {
+    .navbar {
+      flex-wrap: nowrap;
+    }
+
+    .navbar-collapse {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+        gap: 1.75rem;
+    }
+  }
+
+  .navbar-toggler,
+  .navbar-toggler2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  @screen lg {
+    .navbar-toggler,
+    .navbar-toggler2 {
+      display: none;
+    }
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0.375rem;
+  }
+
+  .btn-outline-dark {
+    color: #111111;
+    border-color: #111111;
+    background: transparent;
+  }
+
+  .btn-outline-dark:hover {
+    background: #111111;
+    color: #ffffff;
+  }
+
+  .card {
+    background: transparent;
+    border-radius: 0.375rem;
+  }
+
+  .card-body {
+    padding: 1.5rem;
+  }
+
+  .card-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  @screen lg {
+    .card-group {
+      flex-direction: row;
+    }
+  }
+
+  .card-group .card {
+    flex: 1 1 0%;
+  }
+
+  .card-title {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+
+  .card-text {
+    margin-bottom: 0.75rem;
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  .form-control {
+    width: 100%;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+  }
+
+  .form-label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+
+@layer utilities {
+  .d-none {
+    display: none;
+  }
+
+  .d-flex {
+    display: flex;
+  }
+
+  .justify-content-between {
+    justify-content: space-between;
+  }
+
+  .justify-content-end {
+    justify-content: flex-end;
+  }
+
+  .justify-content-center {
+    justify-content: center;
+  }
+
+  .align-items-center {
+    align-items: center;
+  }
+
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+
+  .fw-bold {
+    font-weight: 700;
+  }
+
+  .fw-bolder {
+    font-weight: 800;
+  }
+
+  .text-white-50 {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .text-primary {
+    color: var(--main-color);
+  }
+
+  .bg-secondary {
+    background-color: #2c2c2c;
+  }
+
+  .min-vh-100 {
+    min-height: 100vh;
+  }
+
+  .flex-column-reverse {
+    flex-direction: column-reverse;
+  }
+
+  @screen md {
+    .flex-md-row {
+      flex-direction: row;
+    }
+  }
+
+  @screen md {
+    .mb-md-0 {
+      margin-bottom: 0;
+    }
+  }
+
+  @screen lg {
+    .mt-lg-0 {
+      margin-top: 0;
+    }
+
+    .ms-lg-3 {
+      margin-left: 1rem;
+    }
+
+    .p-lg-3 {
+      padding: 1rem;
+    }
+  }
+
+  @screen xl {
+    .p-xl-5 {
+      padding: 3rem;
+    }
+  }
+
+  .ms-0 {
+    margin-left: 0;
+  }
+}

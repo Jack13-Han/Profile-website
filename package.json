@@ -2,19 +2,12 @@
   "name": "profile-website",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "build:css": "tailwindcss -i ./src/tailwind.css -o ./css/tailwind.css --minify",
+    "watch:css": "tailwindcss -i ./src/tailwind.css -o ./css/tailwind.css --watch"
   },
   "devDependencies": {
-    "@types/react": "^19.3.0",
-    "@types/react-dom": "^19.3.0",
-    "@vitejs/plugin-react": "^6.1.2",
-    "typescript": "^7.0.2",
-    "vite": "^8.3.4"
-  },
-  "dependencies": {
-    "react": "^19.3.1",
-    "react-dom": "^19.3.1"
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.17"
   }
 }
